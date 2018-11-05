@@ -27,7 +27,7 @@ if __name__ == '__main__':
 
     logging.basicConfig(level=logging.DEBUG)
 
-    port = int(os.getenv('SW4IOT_AGENT_PORT', 8080))
+    port = int(os.getenv('SW4IOT_AGENT_PORT', 9091))
     logging.info("Start server port {}".format(port))
 
     wsgi_app = WsgiApplication(application)
